@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COMPLAINT BOX</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <nav class="navbar fixed-top navbar-light" style="background-color:skyblue;">
+            <a class="navbar-brand"><h2><i>COMPLAINT BOX</i></h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+               
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="schoolcomplaint" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   School Complaints
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="todirector">To Director</a>
+                    <a class="dropdown-item" href="toprincipal">To Principal</a>
+                    <a class="dropdown-item" href="toteacher">To Teacher</a>
+                   
+                </li>
+              
+              </ul>
+              
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                 
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="collegecomplaint" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     College Complaints
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="tocollegedirector">To Director</a>
+                      <a class="dropdown-item" href="tocollegeprincipal">To Principal</a>
+                      <a class="dropdown-item" href="tocollegehod">To HOD</a>
+                      <a class="dropdown-item" href="tocollegeprofessor">To Professor</a>
+                     
+                     
+                  </li>
+                
+                </ul>
+                
+              </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                     
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="makeschoolcomplaint" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Make School Complaints
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="maketodirector">To Director</a>
+                          <a class="dropdown-item" href="maketoprincipal">To Principal</a>
+                          <a class="dropdown-item" href="maketoteacher">To Teacher</a>
+                         
+                      </li>
+                    
+                    </ul>
+                    
+                  </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                     
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="makecollegecomplaint" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Make College Complaints
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="maketocollegedirector">To Director</a>
+                          <a class="dropdown-item" href="maketocollegeprincipal">To Principal</a>
+                          <a class="dropdown-item" href="maketocollegehod">To HOD</a>
+                          <a class="dropdown-item" href="maketocollegeprofessor">To Professor</a>
+                         
+                         
+                      </li>
+                    
+                    </ul>
+                    
+                  </div>
+          </nav>
+
+          <div class="card" style="margin-top: 10px;margin-left: 25%;margin-right: 25%; margin-top: 7%">
+                <div class="card-body" ><h2 style="text-align: center">COMPLAINT TO TEACHERS</h2>
+                        <form action="maketoteacher" method="POST">
+                                <div class="form-group">
+                                  <label for="name">Name</label>
+                                  <input type="text" class="form-control" name="name" id="name" aria-describedby="name" placeholder="Enter Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                        <label for="tname">Teacher Name</label>
+                                        <input type="text" class="form-control" name="tname" id="tname" aria-describedby="tname" placeholder="Enter The Teacher Name" required>
+                                      </div>
+                                <div class="form-group">
+                                  <label for="problem">Problem</label>
+                                  <input type="text" class="form-control" name="problem" id="problem" placeholder="Enter your problem" required>
+                                </div>
+                                <div class="form-group">
+                                        <label for="solution">Solution</label>
+                                        <input type="text" class="form-control" name="solution" id="solution" placeholder="Share your expected solution" required>
+                                      </div>
+                                <div class="col-sm-12 text-center">
+                                <button type="submit" class="btn btn-primary " >Submit</button>
+                                </div>
+                        </form>
+                </div>
+              </div>
+
+
+    </body>
+    
+</html>
